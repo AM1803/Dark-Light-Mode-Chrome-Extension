@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:ital,wght@1,700&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+      body{
+        width:300px;
+      }
+        h1,.button{
+          font-family: 'Montserrat', sans-serif;
+        }
+        .yellow{
+          color:yellow;
+        }
+        .blue{
+          color:blue;
+        }
+        p{
+          font-family: 'Merriweather', serif;
+          font-size:15px;
+        }
+        .button{
+          background-color:#8ABFF0;
+          position:relative;
+          display:flex;
+          flex-direction:row;
+          align-items:center;
+          justify-content:space-between;
+          height:2rem;
+          width:4.5rem;
+          border-radius:1rem;
+
+        }
+        .row{
+          padding:0 0.25rem;
+        }
+        .circle{
+          position:absolute;
+          top:0;
+          left:0;
+          height:2rem;
+          width:2rem;
+          border-radius:50%;
+          background-color:#588BE4;
+          <!-- animation:moveCircleRight 1s infinite; -->
+        }
+
+        @Keyframes moveCircleRight{
+          from{
+            left:0;
+            background-color:#588BE4;
+          }
+          to{
+            left:100%;
+            transform:translateX(-100%);
+            background-color:#588BE4;
+          }
+        }
+        @Keyframes moveCircleLeft{
+          from{
+            left:100%;
+            transform:translateX(-100%);
+            background-color:#588BE4;
+          }
+          to{
+            left:0;
+
+            background-color:#588BE4;
+          }
+    </style>
+  </head>
+
+  <body>
+    <h1><span class="yellow">Invert</span><span class="blue">.io</span></h1>
+    <p>Bored of looking at websites in same way...Meet invert.io that changes the way you see a website....</p>
+    <div class="button">
+      <div class="row">On</div>
+      <div class="row">Off</div>
+      <div class="circle">
+
+      </div>
+    </div>
+
+
+  </body>
+  <script src="./popup.js">
+
+  </script>
+</html>

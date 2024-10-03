@@ -1,0 +1,23 @@
+{
+  "name":"Invert.io",
+  "description":"Change your current mode and mood",
+  "version":"1.0.0",
+   "manifest_version": 2,
+  "background":{
+    "scripts":[
+      "popup.js"
+    ],
+    "persistent":true
+
+  },
+  "browser_action":{
+    "default_title":"Invert.io",
+    "default_popup":"popup.html"
+  },
+  "permissions":[
+    "https://*/*",
+    "https://*/*",
+    "tabs"
+  ]
+
+}
